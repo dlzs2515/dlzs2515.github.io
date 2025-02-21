@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>首页</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* 标题 */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #b7fcbc;
+    padding: 20px;
+}
+
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* 测试图片 */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #b4aaaa;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+    
+    
+    
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+    
+<div class="header">
+  <h1>首页</h1>
+  <p>我是Shawn</p>
+  <p>我是编程技术交流社团的创始人</p>
+  <p>欢迎加我社团!</p>
+</div>
+
+<div class="navbar">
+  <a href="https://dlzs2515.github.io/MC">MC游戏</a>
+  <a href="https://dlzs2515.github.io/GOC">GOC编辑器</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>关于社团</h2>
+      <p>你好！</p>
+      <p>我是编程技术交流社团的创始人</p>
+      <p>社团QQ群号为:</p>
+      <p>1020916219</p>
+  </div>
+  <div class="main">
+      <h2>大家好</h2>
+      <p>这是编程技术交流社团的官方网站</p>
+      <br>
+      <h2>关于社团详细内容</h2>
+      <p>本社团可以交流C,C++,python,汇编,js,html,css,scratch,turbowarp</p>
+      <br>
+      <br>
+      <h1>赞助本网站:<h1/>
+      <img src="images/收款吗.jpg"alt="some_text" >
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2>QQ号</h2>
+  <p>3127500373</p>
+  <p>欢迎加我QQ！</p>
+</div>
+
+</body>
+</html>
