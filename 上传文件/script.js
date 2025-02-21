@@ -10,6 +10,7 @@ function handleFileSelect() {
             size: file.size,
             type: file.type,
             blob: file, // 存储二进制文件
+            id: Date.now() + Math.random(), // 模拟文件 ID
         });
     });
     renderFileList();
@@ -60,10 +61,8 @@ function handleDownload(index) {
         a.download = file.name;
         document.body.appendChild(a);
         a.click();
-        setTimeout(() => {
-            URL.revokeObjectURL(url);
-            document.body.removeChild(a);
-        }, 0);
+        URL.revokeObjectURL(url);
+        document.body.removeChild(a);
     }
 }
 
