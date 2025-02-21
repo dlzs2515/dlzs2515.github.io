@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件上传管理系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h2>文件上传管理系统</h2>
+        <div class="file-input" id="file-input">
+            <input id="upload-button" type="file" multiple onChange="handleFileSelect()">
+            <p>点击或拖拽文件到此处上传</p>
+        </div>
+        
+        <div id="file-list-container" class="file-card">
+            <h3>已上传文件</h3>
+            <table class="file-list">
+                <thead>
+                    <tr>
+                        <th>文件名</th>
+                        <th>大小 (KB)</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="file-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
